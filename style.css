@@ -177,6 +177,11 @@ article:last-child {
     transition: border-color 0.4s ease-in-out;
 }
 
+#bsimg {
+    transform: translateY(2px);
+    height: 20px;
+}
+
 article h4 {
     margin: 0 0 0.2rem;
     font-size: 1.2rem;
