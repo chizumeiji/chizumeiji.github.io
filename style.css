@@ -173,6 +173,7 @@ article:last-child {
     padding-bottom: 0.2rem;
     margin-right: 300px;
     margin-top: 0;
+    margin-bottom: 0px;
     transition: border-color 0.4s ease-in-out;
 }
 
