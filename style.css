@@ -203,6 +203,12 @@ ul li {
     line-height: 1.6;
 }
 
+#skills li {
+    background-color: rgba(122, 122, 122, 0.2);
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
 #skills ul {
     list-style-type: none;
     padding: 0;
