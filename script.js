@@ -6,9 +6,11 @@ function switchTheme() {
     if (toggleSwitch.checked) {
         htmlElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
+        document.querySelector('#bsimg').setAttribute('src', './path/bs-w.png');
     } else {
         htmlElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
+        document.querySelector('#bsimg').setAttribute('src', './path/bs-b.png');
     }
 }
 
