@@ -153,7 +153,7 @@ input:checked + .slider:before {
     text-decoration: underline;
 }
 
-#experience h3 {
+main h3 {
     border-bottom: 2px solid var(--text-color);
     padding-bottom: 0.5rem;
     margin-top: 0;
@@ -168,19 +168,11 @@ article:last-child {
     margin-bottom: 0;
 }
 
-#skills h3 {
-    padding-bottom: 0.5rem;
-    margin-top: 0;
-    transition: border-color 0.4s ease-in-out;
-}
-
 #skills h4 {
-    border-bottom: 2px solid var(--text-color);
     padding-bottom: 0.2rem;
     margin-top: 0;
     transition: border-color 0.4s ease-in-out;
 }
-
 
 article h4 {
     margin: 0 0 0.2rem;
@@ -217,8 +209,3 @@ ul li {
     gap: 10px;
 }
 
-#skills li {
-    background-color: rgba(122, 122, 122, 0.2);
-    padding: 5px 15px;
-    border-radius: 15px;
-}
