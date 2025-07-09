@@ -170,6 +170,14 @@ article:last-child {
     margin-bottom: 0;
 }
 
+main h4 {
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    transition: border-color 0.4s ease-in-out;
+}
+
+
 article h4 {
     margin: 0 0 0.2rem;
     font-size: 1.2rem;
