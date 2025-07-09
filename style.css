@@ -170,6 +170,10 @@ article:last-child {
     margin-bottom: 0;
 }
 
+#skills h3 {
+    border-bottom: 0;
+}
+
 #skills h4 {
     border-bottom: 2px solid var(--text-color);
     padding-bottom: 0.2rem;
