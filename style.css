@@ -170,9 +170,7 @@ article:last-child {
     margin-bottom: 0;
 }
 
-#skills h3 {
-    border-bottom: 0;
-}
+
 
 #skills h4 {
     border-bottom: 2px solid var(--text-color);
@@ -221,4 +219,8 @@ ul li {
     background-color: rgba(122, 122, 122, 0.2);
     padding: 5px 15px;
     border-radius: 15px;
+}
+
+#skills h3 {
+    border-bottom: 0;
 }
