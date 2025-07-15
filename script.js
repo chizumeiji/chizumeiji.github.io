@@ -2,6 +2,7 @@ const toggleSwitch = document.querySelector('#checkbox');
 const htmlElement = document.documentElement;
 const sleep = ms => new Promise(r => setTimeout(r, ms))
 
+
 function switchTheme() {
     if (toggleSwitch.checked) {
         htmlElement.setAttribute('data-theme', 'dark');
@@ -33,9 +34,25 @@ if (savedTheme) {
     }
 }
 
+async function copy_() {
+    const p = document.querySelector("#discord");
+    const clone = p.cloneNode(true);
+    clone.querySelectorAll("img").forEach(img => img.remove());
+    const text = clone.textContent.trim();
+
+    if (text === "Discord") {
+        await navigator.clipboard.writeText("chizumeiji");
+
+        p.innerHTML = '<img src="./path/discord.ico" class="logo"> скопировано ✓';
+        await sleep(2000);
+        p.innerHTML = '<img src="./path/discord.ico" class="logo"> Discord';
+    }
+}
+
+
 document.addEventListener('mousemove', (event) => {
     const hovered_tg = event.target.closest('#telegram');
-    const hovered_ds = event.target.closest('#discord');
+    const hovered_ds = event.target.closest('#discord' || '#dicordimg');
     const hovered_py = event.target.closest('#python');
     const hovered_linux = event.target.closest('#linux');
     const hovered_fapi = event.target.closest('#fastapi');

@@ -37,7 +37,9 @@ body {
 
 .logo {
     margin: 0 0;
-    width: 1.1rem;
+    position: relative;
+    width: 1.3rem;
+    top: 3px;
 }
 
 .stacklogo {
@@ -46,7 +48,18 @@ body {
     height: 20px;
 }
 
+#disb {
+    background-color: rgba(0,0,0,0);
+}
 
+#bsimg {
+    transform: translateY(2px);
+    height: 25px;
+}
+
+#discord:hover {
+    cursor: pointer
+}
 
 .container {
     max-width: 900px;
@@ -179,10 +192,7 @@ article:last-child {
     transition: border-color 0.4s ease-in-out;
 }
 
-#bsimg {
-    transform: translateY(2px);
-    height: 25px;
-}
+
 
 article h4 {
     margin: 0 0 0.2rem;
