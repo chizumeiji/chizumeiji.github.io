@@ -67,10 +67,6 @@ document.addEventListener('mousemove', (event) => {
         document.querySelector('#title').innerHTML = 'фастапи бекенд';
         document.querySelector('#icon').setAttribute('href', './path/fastapi.png');
     }
-    else if (hovered_pyro) {
-        document.querySelector('#title').innerHTML = 'пирограм (Fork)';
-        document.querySelector('#icon').setAttribute('href', './path/pyrogram.png');
-    }
     else if (hovered_sqlite) {
         document.querySelector('#title').innerHTML = 'SQLite';
         document.querySelector('#icon').setAttribute('href', './path/sqlite.png');
@@ -78,6 +74,10 @@ document.addEventListener('mousemove', (event) => {
     else if (hovered_potgre) {
         document.querySelector('#title').innerHTML = 'PostgreSQL';
         document.querySelector('#icon').setAttribute('href', './path/potgresql.png');
+    }
+    else if (hovered_pyro) {
+        document.querySelector('#title').innerHTML = 'пирограм (Fork)';
+        document.querySelector('#icon').setAttribute('href', './path/pyrogram.png');
     }
     else if (hovered_web) {
         document.querySelector('#title').innerHTML = 'реквесты';
