@@ -40,9 +40,13 @@ document.addEventListener('mousemove', (event) => {
     const hovered_linux = event.target.closest('#linux');
     const hovered_fapi = event.target.closest('#fastapi');
     const hovered_pyro = event.target.closest('#pyrogram');
-    const hovered_sql = event.target.closest('#sql');
-    const hovered_web = event.target.closest('#web');
+    const hovered_sqlite = event.target.closest('#sqlite');
+    const hovered_potgre = event.target.closest('#postgre');
+    const hovered_web = event.target.closest('#requests');
     const hovered_me = event.target.closest('#meiji');
+    const hovered_git = event.target.closest('#git');
+    const hovered_bs = event.target.closest('#bs');
+
     if (hovered_tg) {
         document.querySelector('#title').innerHTML = 'телеграм';
         document.querySelector('#icon').setAttribute('href', './path/telegram.png');
@@ -67,17 +71,25 @@ document.addEventListener('mousemove', (event) => {
         document.querySelector('#title').innerHTML = 'пирограм (Fork)';
         document.querySelector('#icon').setAttribute('href', './path/pyrogram.png');
     }
-    else if (hovered_sql) {
-        document.querySelector('#title').innerHTML = 'SQL';
-        document.querySelector('#icon').setAttribute('href', './path/sql.png');
+    else if (hovered_sqlite) {
+        document.querySelector('#title').innerHTML = 'SQLite';
+        document.querySelector('#icon').setAttribute('href', './path/sqlite.png');
+    }
+    else if (hovered_potgre) {
+        document.querySelector('#title').innerHTML = 'PostgreSQL';
+        document.querySelector('#icon').setAttribute('href', './path/potgresql.png');
     }
     else if (hovered_web) {
-        document.querySelector('#title').innerHTML = 'веб фронтенд';
-        document.querySelector('#icon').setAttribute('href', './path/python.png');
+        document.querySelector('#title').innerHTML = 'реквесты';
+        document.querySelector('#icon').setAttribute('href', './path/globe-b.png');
     }
-    else if (hovered_me) {
-        document.querySelector('#title').innerHTML = 'меня зовут так';
-        document.querySelector('#icon').setAttribute('href', './favicon.png');
+    else if (hovered_git) {
+        document.querySelector('#title').innerHTML = 'Гит';
+        document.querySelector('#icon').setAttribute('href', './path/git.png');
+    }
+    else if (hovered_bs) {
+        document.querySelector('#title').innerHTML = 'красивый суп';
+        document.querySelector('#icon').setAttribute('href', './path/globe-b.png');
     }
     else {
         document.querySelector('#title').innerHTML = 'резюме';
