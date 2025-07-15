@@ -46,6 +46,9 @@ document.addEventListener('mousemove', (event) => {
     const hovered_me = event.target.closest('#meiji');
     const hovered_git = event.target.closest('#git');
     const hovered_bs = event.target.closest('#bs');
+    const hovered_html = event.target.closest('#html');
+    const hovered_css = event.target.closest('#css');
+    const hovered_js = event.target.closest('#js');
 
     if (hovered_tg) {
         document.querySelector('#title').innerHTML = 'телеграм';
@@ -90,6 +93,18 @@ document.addEventListener('mousemove', (event) => {
     else if (hovered_bs) {
         document.querySelector('#title').innerHTML = 'красивый суп';
         document.querySelector('#icon').setAttribute('href', './path/globe-b.webp');
+    }
+    else if (hovered_html) {
+        document.querySelector('#title').innerHTML = 'html';
+        document.querySelector('#icon').setAttribute('href', './path/html.png');
+    }
+    else if (hovered_css) {
+        document.querySelector('#title').innerHTML = 'css';
+        document.querySelector('#icon').setAttribute('href', './path/css.png');
+    }
+    else if (hovered_js) {
+        document.querySelector('#title').innerHTML = 'js';
+        document.querySelector('#icon').setAttribute('href', './path/js.png');
     }
     else if (hovered_me) {
         document.querySelector('#title').innerHTML = 'меня зовут так';
