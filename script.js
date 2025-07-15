@@ -76,7 +76,7 @@ document.addEventListener('mousemove', (event) => {
     }
     else if (hovered_potgre) {
         document.querySelector('#title').innerHTML = 'PostgreSQL';
-        document.querySelector('#icon').setAttribute('href', './path/potgresql.png');
+        document.querySelector('#icon').setAttribute('href', './path/postgresql.png');
     }
     else if (hovered_pyro) {
         document.querySelector('#title').innerHTML = 'пирограм (Fork)';
