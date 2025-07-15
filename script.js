@@ -81,7 +81,7 @@ document.addEventListener('mousemove', (event) => {
     }
     else if (hovered_web) {
         document.querySelector('#title').innerHTML = 'реквесты';
-        document.querySelector('#icon').setAttribute('href', './path/globe-b.png');
+        document.querySelector('#icon').setAttribute('href', './path/globe-b.webp');
     }
     else if (hovered_git) {
         document.querySelector('#title').innerHTML = 'Гит';
@@ -89,7 +89,7 @@ document.addEventListener('mousemove', (event) => {
     }
     else if (hovered_bs) {
         document.querySelector('#title').innerHTML = 'красивый суп';
-        document.querySelector('#icon').setAttribute('href', './path/globe-b.png');
+        document.querySelector('#icon').setAttribute('href', './path/globe-b.webp');
     }
     else if (hovered_me) {
         document.querySelector('#title').innerHTML = 'меня зовут так';
