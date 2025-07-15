@@ -91,6 +91,10 @@ document.addEventListener('mousemove', (event) => {
         document.querySelector('#title').innerHTML = 'красивый суп';
         document.querySelector('#icon').setAttribute('href', './path/globe-b.png');
     }
+    else if (hovered_me) {
+        document.querySelector('#title').innerHTML = 'меня зовут так';
+        document.querySelector('#icon').setAttribute('href', './favicon.png');
+    }
     else {
         document.querySelector('#title').innerHTML = 'резюме';
         document.querySelector('#icon').setAttribute('href', './favicon.png');
