@@ -3,7 +3,7 @@
     --text-color: #333;
     --card-bg-color: rgba(255, 255, 255, 0.13);
     --card-border-color: rgba(44, 88, 88, 0.13);
-    --shadow-color: rgba(0, 95, 95, 0.329);
+    --shadow-color: rgba(65, 109, 134, 0.329);
     --link-color: #007bff;
     --bg-angle: 120deg;
     --bg-image: linear-gradient(var(--bg-angle), #a1c4fd 0%, #ddf4ff 100%);
