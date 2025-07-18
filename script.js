@@ -66,6 +66,13 @@ document.addEventListener('mousemove', (event) => {
     const hovered_html = event.target.closest('#html');
     const hovered_css = event.target.closest('#css');
     const hovered_js = event.target.closest('#js');
+    const hovered_json = event.target.closest('#json');
+    const hovered_aio = event.target.closest('#aio');
+    const hovered_pil = event.target.closest('#pil');
+    const hovered_cv2 = event.target.closest('#cv2');
+    const hovered_ffmpeg = event.target.closest('#ffmpeg');
+    const hovered_bash = event.target.closest('#bash');
+    const hovered_asyncio = event.target.closest('#asyncio');
 
     if (hovered_tg) {
         document.querySelector('#title').innerHTML = 'телеграм';
@@ -126,6 +133,34 @@ document.addEventListener('mousemove', (event) => {
     else if (hovered_me) {
         document.querySelector('#title').innerHTML = 'меня зовут так';
         document.querySelector('#icon').setAttribute('href', './favicon.png');
+    }
+    else if (hovered_json) {
+        document.querySelector('#title').innerHTML = 'JSON';
+        document.querySelector('#icon').setAttribute('href', './path/json.png');
+    }
+    else if (hovered_aio) {
+        document.querySelector('#title').innerHTML = 'AIOgram';
+        document.querySelector('#icon').setAttribute('href', './path/aio.webp');
+    }
+    else if (hovered_pil) {
+        document.querySelector('#title').innerHTML = 'Pillow';
+        document.querySelector('#icon').setAttribute('href', './path/pil.png');
+    }
+    else if (hovered_cv2) {
+        document.querySelector('#title').innerHTML = 'OpenCV';
+        document.querySelector('#icon').setAttribute('href', './path/cv2.png');
+    }
+    else if (hovered_ffmpeg) {
+        document.querySelector('#title').innerHTML = 'FFMPEG';
+        document.querySelector('#icon').setAttribute('href', './path/ffmpeg.png');
+    }
+    else if (hovered_bash) {
+        document.querySelector('#title').innerHTML = 'BASH';
+        document.querySelector('#icon').setAttribute('href', './path/bash.png');
+    }
+    else if (hovered_asyncio) {
+        document.querySelector('#title').innerHTML = 'AsyncIO';
+        document.querySelector('#icon').setAttribute('href', './path/python.png');
     }
     else {
         document.querySelector('#title').innerHTML = 'резюме';
