@@ -35,6 +35,15 @@ body {
     transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
+#langs {
+    margin-top: 2px;
+}
+
+#langs h4 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
 .logo {
     margin: 0 0;
     position: relative;
@@ -43,7 +52,7 @@ body {
 }
 
 .stacklogo {
-    transform: translateY(2px);
+    transform: translateY(3px);
     width: 20px;
     height: 20px;
 }
