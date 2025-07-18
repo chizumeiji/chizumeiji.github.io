@@ -233,7 +233,7 @@ ul li {
     background-color: rgba(122, 122, 122, 0.2);
     padding: 5px 15px;
     border-radius: 15px;
-    box-shadow: 0 8px 4px 0 var(--shadow-color);
+    box-shadow: 0 4px 4px 0 var(--shadow-color);
 }
 
 #skills ul {
