@@ -150,7 +150,7 @@ header.card.visible, section.card.visible {
 }
 
 header.card:hover, section.card:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     box-shadow: 0 12px 40px 0 var(--shadow-color);
 }
 
@@ -327,7 +327,7 @@ ul li.visible {
 }
 
 #skills li:hover {
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 
 #skills ul {
