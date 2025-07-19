@@ -18,7 +18,7 @@
     --text-color: #eee;
     --card-bg-color: rgba(40, 40, 40, 0.13);
     --card-border-color: rgba(255, 255, 255, 0.1);
-    --shadow-color: rgba(0, 0, 0, 0.3);
+    --shadow-color: rgba(0, 0, 0, 0.33);
     --link-color: #82baff;
     --bg-image: linear-gradient(var(--bg-angle), #603d75 0%, #4ca1af 100%);
     --slider-bg: #2c3e50;
@@ -138,7 +138,7 @@ header.card, section.card {
     border: 1px solid var(--card-border-color);
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 20px 0 var(--shadow-color);
+    box-shadow: 0 8px 32px 0 var(--shadow-color);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out var(--animation-delay);
     opacity: 0;
     transform: translateY(20px);
@@ -151,7 +151,7 @@ header.card.visible, section.card.visible {
 
 header.card:hover, section.card:hover {
     transform: scale(1.01);
-    box-shadow: 0 8px 30px 0 var(--shadow-color);
+    box-shadow: 0 12px 40px 0 var(--shadow-color);
 }
 
 .resume-header h1 {
@@ -319,10 +319,10 @@ ul li.visible {
 }
 
 #skills li {
-    background-color: rgba(155, 155, 155, 0.1);
+    background-color: rgba(122, 122, 122, 0.2);
     padding: 5px 15px;
     border-radius: 15px;
-    border: 1px solid var(--card-border-color);
+    box-shadow: 0 4px 4px 0 var(--shadow-color);
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out var(--animation-delay);
 }
 
@@ -336,8 +336,4 @@ ul li.visible {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-}
-
-[data-theme="dark"] .invert_on_dark{
-    filter: invert(1);
 }
