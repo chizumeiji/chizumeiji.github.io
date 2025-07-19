@@ -152,38 +152,27 @@ setInterval(() => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('header.card, section.card, .resume-header h1, .resume-header h2, .contact-info h3, .contact-info p, main h3, article, #skills h4, article h4, .sub-heading, .date, ul li');
-    
-    let index = 0;
-    elements.forEach(element => {
-        element.style.setProperty('--animation-delay', `${index * 0.07}s`);
-        index++;
-    });
+
+    const visibleElements = new Set();
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
+        const newVisible = entries
+            .filter(entry => entry.isIntersecting && !visibleElements.has(entry.target))
+            .map(entry => entry.target);
+
+        newVisible.sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
+
+        newVisible.forEach((element, index) => {
+            element.style.setProperty('--animation-delay', `${index * 0.07}s`);
+            element.classList.add('visible');
+            visibleElements.add(element);
         });
     }, {
         threshold: 0,
-        rootMargin: '0px'
+        rootMargin: '0px',
     });
-    index = 0
+
     elements.forEach(element => {
-        const rect = element.getBoundingClientRect();
-        const isInViewport = (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.top <= (window.innerHeight || document.documentElement.clientHeight)
-        );
-        if (isInViewport) {
-            element.classList.add('visible');
-        }
-        else {
-            element.style.setProperty('--animation-delay', `${index * 0.07}s`);
-            index++
-        }
         observer.observe(element);
     });
 });
